@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Student Discipline Tracker</title>
+<link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#3b82f6">
+</head>
+
+<body>
+
+<!-- LOGIN SCREEN -->
+
+<div id="loginScreen" class="screen">
+
+<h2>Welcome</h2>
+
+<input id="nameInput" placeholder="Your Name">
+
+<h3>Your 3 Permanent Goals</h3>
+
+<input id="goal1" placeholder="Goal 1">
+<input id="goal2" placeholder="Goal 2">
+<input id="goal3" placeholder="Goal 3">
+
+<button id="startBtn">Start Tracking</button>
+
+</div>
+
+
+<!-- MAIN APP -->
+
+<div id="appScreen" class="screen hidden">
+
+<h1 id="welcomeText"></h1>
+
+
+
+<!-- GOALS DISPLAY -->
+
+<div class="card">
+
+<h2>Your Goals</h2>
+
+<ul id="goalsList"></ul>
+
+<button id="updateGoalsBtn">Update Goals</button>
+
+</div>
+
+
+
+<!-- MOTIVATION MESSAGE -->
+
+<div id="motivationBox"></div>
+
+
+
+<!-- PERFORMANCE GRAPHS -->
+
+<h2>Performance</h2>
+
+<div class="graphRow">
+
+<div class="circleGraph" id="dailyPerf">
+<span>0%</span>
+</div>
+
+<div class="circleGraph" id="weeklyPerf">
+<span>0%</span>
+</div>
+
+<div class="circleGraph" id="monthlyPerf">
+<span>0%</span>
+</div>
+
+</div>
+
+
+
+<!-- ACTUAL PROGRESS -->
+
+<h2>Actual Progress</h2>
+
+<div class="graphRow">
+
+<div class="donutGraph" id="dailyDonut">
+<span>0%</span>
+</div>
+
+<div class="donutGraph" id="weeklyDonut">
+<span>0%</span>
+</div>
+
+<div class="donutGraph" id="monthlyDonut">
+<span>0%</span>
+</div>
+
+</div>
+
+
+
+<!-- TASK CHECKBOXES -->
+
+<h2>Monthly Discipline</h2>
+
+<div id="checkboxGrid"></div>
+
+
+</div>
+
+
+<script src="app.js"></script>
+
+</body>
+
+</html>
