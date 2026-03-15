@@ -1,0 +1,147 @@
+:root{
+  --bg-color: #0f172a;
+  --card-bg: #1e293b;
+  --accent-color: #3b82f6;
+  --text-color: white;
+  --yellow-color: #facc15;
+  --green-color: #22c55e;
+  --red-color: #ef4444;
+}
+
+body{
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+button{
+  background: var(--accent-color);
+}
+
+.card{
+  background: var(--card-bg);
+}
+/* GENERAL PAGE */
+body{
+  font-family: Arial, sans-serif;
+  background:#0f172a;
+  color:white;
+  margin:0;
+  padding:0;
+  text-align:center;
+}
+
+/* HIDDEN SCREENS */
+.hidden{ display:none; }
+
+.screen{
+  padding: 40px 20px;
+}
+
+/* INPUTS */
+input{
+  display:block;
+  margin:10px auto;
+  padding:8px;
+  font-size:16px;
+  width:200px;
+  border-radius:6px;
+  border:none;
+}
+
+button{
+  margin:15px;
+  padding:10px 20px;
+  font-size:16px;
+  border:none;
+  border-radius:6px;
+  background:#3b82f6;
+  color:white;
+  cursor:pointer;
+}
+
+button:hover{
+  background:#60a5fa;
+}
+
+/* GOALS CARD */
+.card{
+  background:#1e293b;
+  margin:20px auto;
+  padding:20px;
+  border-radius:12px;
+  width:300px;
+}
+
+/* MOTIVATION */
+#motivationBox{
+  margin:20px;
+  font-size:18px;
+  font-weight:bold;
+  color:#60a5fa;
+}
+
+/* GRAPHS ROW */
+.graphRow{
+  display:flex;
+  justify-content:center;
+  gap:40px;
+  margin:20px 0;
+}
+
+/* PERFORMANCE CIRCLES */
+.circleGraph{
+  width:100px;
+  height:100px;
+  border-radius:50%;
+  background:#1e293b;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:18px;
+  font-weight:bold;
+  color:white;
+  border:5px solid #3b82f6;
+}
+
+/* DONUT GRAPHS */
+.donutGraph{
+  width:100px;
+  height:100px;
+  border-radius:50%;
+  background:conic-gradient(#3b82f6 0%, #1e293b 0%);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:relative;
+}
+
+.donutGraph::before{
+  content:"";
+  position:absolute;
+  width:60px;
+  height:60px;
+  background:#0f172a;
+  border-radius:50%;
+}
+
+.donutGraph span{
+  position:relative;
+  font-weight:bold;
+  font-size:16px;
+}
+
+/* CHECKBOX GRID */
+#checkboxGrid{
+  width:320px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(9,1fr);
+  gap:8px;
+  margin-top:20px;
+}
+
+#checkboxGrid input{
+  width:22px;
+  height:22px;
+  accent-color:#3b82f6;
+}
